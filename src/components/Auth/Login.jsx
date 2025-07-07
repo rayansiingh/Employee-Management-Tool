@@ -16,13 +16,13 @@ function Login() {
         >
           <input
             {...register("email", { required: true })}
-            className="bg-[#FFFBFF] rounded-full py-3 px-5 text-xl outline-none placeholder:text-zinc-700 mt-8 border-1"
+            className="rounded-full py-3 px-5 text-xl outline-none placeholder:text-zinc-700 mt-8 border-1"
             type="email"
             placeholder="Email address"
           />
           <input
             {...register("password", { required: true })}
-            className="bg-[#FFFBFF] rounded-full py-3 px-5 text-xl outline-none placeholder:text-zinc-700 border-1"
+            className="rounded-full py-3 px-5 text-xl outline-none placeholder:text-zinc-700 border-1"
             type="password"
             placeholder="Password"
           />
