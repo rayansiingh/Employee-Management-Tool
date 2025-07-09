@@ -16,23 +16,20 @@ function Login() {
         >
           <input
             {...register("email", { required: true })}
-            className="bg-[#fffbff] rounded-full py-3 px-5 text-xl outline-none placeholder:text-zinc-700 mt-8 border-1"
+            className=" text-black bg-[#fffbff] rounded-full py-3 px-5 text-xl outline-none placeholder:text-zinc-700 mt-8 border-1"
             type="email"
             placeholder="Email address"
-            style={{ color: "black" }}
           />
           <input
             {...register("password", { required: true })}
-            className="bg-[#fffbff] rounded-full py-3 px-5 text-xl outline-none placeholder:text-zinc-700 border-1"
+            className=" text-black bg-[#fffbff] rounded-full py-3 px-5 text-xl outline-none placeholder:text-zinc-700 border-1"
             type="password"
             placeholder="Password"
-            style={{ color: "black" }}
           />
           <input
-            className="bg-[#90FFDC] hover:bg-emerald-300 border-1 rounded-full py-2 px-5 text-lg mt-8 font-base"
+            className=" text-black bg-[#90FFDC] hover:bg-emerald-300 border-1 rounded-full py-2 px-5 text-lg mt-8 font-base"
             type="submit"
             value="Log In"
-            style={{ color: "black" }}
           />
         </form>
       </div>

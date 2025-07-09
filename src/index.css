@@ -1,8 +1,10 @@
 @import "tailwindcss";
 
-* {
+/* * {
   color: #fffbff;
-}
-#taskList::-webkit-scrollbar {
+} */
+
+#taskList::-webkit-scrollbar,
+#AllTasks::-webkit-scrollbar {
   display: none; /* Hide the scrollbar */
 }
