@@ -1,10 +1,11 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 
-function Login() {
+function Login({ handleLogin }) {
   const { register, handleSubmit, reset } = useForm();
   const handleFormSubmit = (data) => {
-    console.log(data);
+    // console.log(data);
+    handleLogin(data.email, data.password);
     reset();
   };
   return (
