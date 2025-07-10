@@ -1,14 +1,19 @@
-import React, { createContext, useState } from "react";
-import { get, set } from "react-hook-form";
+import React, { createContext, useEffect, useState } from "react";
 import { getLocalStorage } from "../utils/LocalStorage";
 
+export const AuthContext = createContext();
+
 const AuthProvider = ({ children }) => {
-  const AuthContext = createContext();
   const [userData, setUserData] = useState(null);
-  setUserData(getLocalStorage());
+
+  useEffect(() => {
+    const { employees, admin } = getLocalStorage();
+    setUserData({ employees, admin });
+  }, []);
+
   return (
     <div>
-      <AuthContext.Provider value={"rayan"}>{children}</AuthContext.Provider>
+      <AuthContext.Provider value={userData}>{children}</AuthContext.Provider>
     </div>
   );
 };
